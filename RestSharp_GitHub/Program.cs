@@ -7,7 +7,8 @@ using System.Text.Json;
 
 var client = new RestClient("https://api.github.com");
 // FOR POST
-client.Authenticator = new HttpBasicAuthenticator("ivantenchev", "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");
+string YourGitHubToken = "INSERT YOUR TOKEN HERE";
+client.Authenticator = new HttpBasicAuthenticator("ivantenchev", "YourGitHubToken");
 
 //var request = new RestRequest("/users/ivantenchev/repos");
 
